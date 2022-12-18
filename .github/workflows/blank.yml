@@ -5,6 +5,8 @@ env:
 jobs:
   create-branch:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write 
     steps:
       - name: Checkout main
         uses: actions/checkout@v3
