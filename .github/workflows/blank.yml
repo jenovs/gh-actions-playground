@@ -13,5 +13,5 @@ jobs:
       - name: Create branch
         run: |
           echo "Creating commit..."
-          git commit -m --allow-empty "commit from action"
+          git commit -m "commit from action" --allow-empty
           git push
