@@ -9,7 +9,9 @@ jobs:
   create-branch:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write 
+      pull-requests: write
+      contents: write
+      packages: write
     steps:
       - name: Checkout main
         uses: actions/checkout@v3
