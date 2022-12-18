@@ -11,4 +11,4 @@ jobs:
       - name: Create branch
         run: gh codespace create -b "branch-from-action"
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_ACTION }}
