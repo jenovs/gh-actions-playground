@@ -1,7 +1,7 @@
 name: Create branch
 on: workflow_dispatch
 env:
-  GH_TOKEN: ${{ secrets.GH_ACTION_2 }}
+  GH_TOKEN: ${{ secrets.GH_ACTIONS_PAT }}
 jobs:
   create-branch:
     runs-on: ubuntu-latest
