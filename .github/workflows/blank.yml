@@ -2,6 +2,9 @@ name: Create branch
 on: workflow_dispatch
 env:
   GH_TOKEN: ${{ secrets.GH_ACTION_2 }}
+permissions:
+  contents: write
+  packages: write
 jobs:
   create-branch:
     runs-on: ubuntu-latest
