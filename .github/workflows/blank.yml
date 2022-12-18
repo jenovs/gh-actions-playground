@@ -12,6 +12,6 @@ jobs:
 #         env:
 #           GH_TOKEN: ${{ secrets.GH_ACTION }}
         run: |
-          echo ${{ secrets.GH_ACTION }} | gh auth login --with-token
+          echo ${{ secrets.GH_ACTION_2 }} | gh auth login --with-token
           gh codespace create -b "branch-from-action"
 
