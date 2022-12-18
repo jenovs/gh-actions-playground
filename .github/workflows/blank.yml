@@ -7,4 +7,4 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v3
       - name: Create branch
-        run: gh codespace create action-branch
+        run: gh codespace create -b action-branch
