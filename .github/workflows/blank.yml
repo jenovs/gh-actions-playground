@@ -1,5 +1,7 @@
 name: Create branch
 on: workflow_dispatch
+env:
+    GH_TOKEN: ${{ github.token }}
 jobs:
   create-branch:
     runs-on: ubuntu-latest
