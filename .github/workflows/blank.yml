@@ -1,0 +1,10 @@
+name: Create branch
+on: workflow_dispatch
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3
+      - name: Create branch
+        run: gh codespace create action-branch
