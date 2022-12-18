@@ -16,5 +16,5 @@ jobs:
           git config user.email $GITHUB_ACTOR@users.noreply.github.com
           git switch -c "action-branch"
           git commit -m "action commit" --allow-empty
-          gh pr create
+          gh pr create -t "new pr from action" -b "This PR was created by GH action"
 
