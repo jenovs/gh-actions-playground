@@ -12,6 +12,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_ACTION_2 }}
         run: |
-          echo ${{ github.GH_TOKEN }}
-          gh codespace create -b "branch-from-action" >> echo
+          gh codespace create -b "branch-from-action"
 
