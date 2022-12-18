@@ -11,6 +11,6 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v3
       - name: Create branch
-      - run: gh codespace create -b "branch-from-action"
+        run: gh codespace create -b "branch-from-action"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
