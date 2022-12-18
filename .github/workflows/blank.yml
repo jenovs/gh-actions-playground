@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v3
+        with:
+          ref: 'main'
       - name: Create branch
         run: gh codespace create -b action-branch
