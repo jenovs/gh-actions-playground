@@ -13,4 +13,4 @@ jobs:
       - name: Create branch
         run: |
           echo "Creating branch..."
-          gh codespace create -b action-branch
+          git branch -c branch-from-action
