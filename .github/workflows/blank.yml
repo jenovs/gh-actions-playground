@@ -9,9 +9,8 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v3
       - name: Create branch
-#         env:
-#           GH_TOKEN: ${{ secrets.GH_ACTION }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_ACTION_2 }}
         run: |
-          echo ${{ secrets.GH_ACTION_2 }} | gh auth login --with-token
           gh codespace create -b "branch-from-action"
 
